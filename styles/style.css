@@ -1,0 +1,287 @@
+body {
+    margin:0;
+    border: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@font-face{
+    font-family: BloggerLight;
+    src: url(../fonts/Rafale/Rafale-RU.otf);
+}
+
+
+.hnav {
+    
+    color: #ffffff;
+    height: 30em;
+    margin:0;
+    position: relative;
+    padding-top: 1em;
+    background-image: url(../images/wood_texture.jpg);
+    background-attachment:fixed;
+    
+    
+}
+#travels_pic {
+    background-image: url(../images/about_me.jpg);
+}
+
+#bike_pic{
+    background: url(../images/bike.jpg);
+    background-attachment:fixed;
+}
+
+#tips_pic {
+    background-image: url(../images/tips.jpg);
+}
+
+#plans_pic {
+    background-image: url(../images/future_plans2.jpg);
+}
+
+#aboutme_pic {
+    background-image: url(../images/wood_texture.jpg);
+}
+
+.hnav header{
+    font-family: BloggerLight;
+    margin:0;
+    text-align: center;
+    font-size:2em;
+    
+    
+    
+}
+
+.hnav nav {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10em;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.hnav nav .nav_item {
+    flex:1;
+    text-align: center;
+    font-size: 1.9em;
+    border-width: 0px;
+    text-decoration: none;
+    color: #ffffff;
+    height: 2.5em;
+    padding-top: 1em;
+    opacity: 0.2;
+    font-weight: 100;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 0px;
+    transition: border 1s;
+    transition: 1s;
+}
+
+
+
+.hnav nav .nav_item:hover{
+    color: #ffffff;
+    opacity: 1;
+    font-weight: 100;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-bottom-width: 3px;
+    font-size: 2em;
+
+}
+
+.hnav nav .nav_item:active{
+    opacity: 0.5;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+#travels, #bike_trails, #tips, #future_plans, #about_me {
+    color: #ffffff;
+    opacity: 1;
+    font-weight: 100;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap; 
+    margin-top: 0;
+    
+}
+
+.blog_feed {
+    flex: 4;
+    
+    margin-left: 1em;
+}
+
+.sec {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.abtm_feed_txt {
+    margin-top: 2em;
+    font-size: x-large;
+    margin-left: 4em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    
+}
+
+.abtm_feed_img {
+    float: left;
+    height: 45vw;
+    width: auto;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    font-size: larger;
+    margin-left: 2em;
+    
+}
+
+
+
+main .blog_feed .sec .sec_article{
+    flex:1;
+    font-size: larger;
+    margin:2em;
+    padding-left: 0;
+    padding-right: 2em;
+    border-top-style: solid;
+    border-top-color: black;
+
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    padding-bottom: 2em;
+    transition: 1s;
+    
+}
+
+.hidden_info {
+    display: none;
+    font-size: larger;
+    margin: 2em;
+}
+
+.fade {
+    opacity:0.7;
+    
+}
+
+.desc_pic {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    width: 30vw;
+    height: 20vw;
+}
+
+.hide_arrow {
+    height: 2em;
+    width: 2em;
+    opacity: 0.3;
+    margin-left: 60vw;
+    transition: 0.5s;
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+.hide_arrow:hover {
+    opacity:1;
+    cursor: pointer;
+    padding-top: 0em;
+    padding-bottom: 1em;
+}
+
+main .blog_feed .sec .sec_article:hover{
+    color: rgb(187, 187, 187);
+    border-top-style: solid;
+    border-top-color: rgb(177, 177, 177);
+
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    
+    padding-left: 2em;
+    padding-right:0;
+    cursor: pointer;
+}
+
+main .blog_feed .sec .sec_article:active{
+    color: black;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+main .blog_feed .sec .sec_img{
+    flex:2;
+    width: 10em;
+    height: auto;
+    margin-left: 2em;
+    margin:2em;
+    transition: 1s;
+    
+    
+    
+    
+}
+
+main .blog_additional {
+    flex: 1;
+    background-color: #3a3a3a;
+    padding-left: 2em;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    padding-top: 1em;
+}
+
+main .blog_additional aside {
+    position: sticky;
+    top:2em;
+    
+}
+
+.aside_box {
+    margin-right: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid white;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+.aside_box:hover {
+    opacity: 1;
+}
+
+.aside_link {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.aside_header {
+    padding-bottom: 1em;
+    border-bottom: 2px solid white;
+}
+
+.aside_pic {
+    width: auto;
+    height: 10vw;
+}
+
+footer {
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    color: #ffffff;
+    background-color: black;
+}
+
